@@ -88,7 +88,7 @@ const HeroSection = () => {
         <div className="text-lg mb-6 font-medium text-purple-200">Hello, I'm</div>
         <strong className="text-8xl font-bold mb-6 text-purple-700">Alysa Emilio</strong>
         <div className="w-full text-lg max-w-md mb-6 leading-relaxed text-slate-500">
-          Freelancer, Computer Engineer &  A Dedicated FullStack Web Developer. I
+          Freelancer, Computer Engineer &  A FullStack Web Developer. I
           self-paced and I love what I do.
         </div>
 
