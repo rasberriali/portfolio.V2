@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi"; // For menu and close icons
+import { Spin as Hamburger } from "hamburger-react"; // Importing the Hamburger component
 import { Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { motion, useMotionValue, useMotionTemplate, animate } from "framer-motion";
 import Marquee from "../components/marquee";
-import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope } from "react-icons/fa"; // Added icons for the sidebar
+import { FaHome, FaInfoCircle, FaProjectDiagram, FaEnvelope } from "react-icons/fa"; // Icons for the sidebar
 
 // Aurora Color Set
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -24,8 +24,6 @@ const HeroSection = () => {
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 50%, ${color})`;
 
-  const toggleSidebar = () => setSidebarOpen(!isSidebarOpen);
-
   return (
     <motion.div
       style={{ backgroundImage }}
@@ -44,11 +42,7 @@ const HeroSection = () => {
         
         {/* Menu Button for Small Screens */}
         <div className="lg:hidden">
-          {isSidebarOpen ? (
-            <FiX className="text-3xl cursor-pointer" onClick={toggleSidebar} />
-          ) : (
-            <FiMenu className="text-3xl cursor-pointer" onClick={toggleSidebar} />
-          )}
+          <Hamburger toggled={isSidebarOpen} toggle={setSidebarOpen} />
         </div>
 
         {/* Navbar Links (Hidden on Small Screens) */}
@@ -94,7 +88,7 @@ const HeroSection = () => {
         <div className="text-lg mb-6 font-medium text-purple-200">Hello, I'm</div>
         <strong className="text-8xl font-bold mb-6 text-purple-700">Alysa Emilio</strong>
         <div className="w-full text-lg max-w-md mb-6 leading-relaxed text-slate-500">
-          Freelancer, Computer Engineer & Aspiring FullStack Web Developer. I
+          Freelancer, Computer Engineer &  A FullStack Web Developer. I
           self-paced and I love what I do.
         </div>
 
