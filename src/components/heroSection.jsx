@@ -86,7 +86,7 @@ const HeroSection = () => {
       {/* Main Content */}
       <div className="relative z-10 w-full max-w-5xl flex flex-col justify-center items-start mt-4 p-6 py-20">
         <div className="text-lg mb-6 font-medium text-purple-200">Hello, I'm</div>
-        <strong className="text-8xl font-bold mb-6 text-purple-700">Alysa Emilio</strong>
+        <strong className="text-8xl font-bold mb-6 text-purple-700">Alysa Juliana</strong>
         <div className="w-full text-lg max-w-md mb-6 leading-relaxed text-slate-500">
           Freelancer, Computer Engineer &  A FullStack Web Developer. I
           self-paced and I love what I do.
